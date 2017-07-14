@@ -10,3 +10,51 @@
 2017-07-13 16:08:22  [ main:87 ] - [ DEBUG ]  zzc4
 2017-07-13 16:08:22  [ main:87 ] - [ DEBUG ]  zzc5
 2017-07-13 16:08:22  [ main:87 ] - [ DEBUG ]  len:0
+2017-07-13 21:20:05  [ main:0 ] - [ DEBUG ]  This is info message 3  4
+2017-07-13 21:20:05  [ main:97 ] - [ DEBUG ]  -----zzc
+2017-07-13 21:20:05  [ main:97 ] - [ DEBUG ]  -----zzc4
+2017-07-13 21:20:05  [ main:97 ] - [ DEBUG ]  -----zzc5
+2017-07-13 21:20:05  [ main:97 ] - [ DEBUG ]  zzc
+2017-07-13 21:20:05  [ main:97 ] - [ DEBUG ]  zzc4
+2017-07-13 21:20:05  [ main:97 ] - [ DEBUG ]  zzc5
+2017-07-13 21:20:05  [ main:97 ] - [ DEBUG ]  len:3
+2017-07-13 21:20:05  [ main:98 ] - [ DEBUG ]  zzc
+2017-07-13 21:20:05  [ main:98 ] - [ DEBUG ]  zzc4
+2017-07-13 21:20:05  [ main:98 ] - [ DEBUG ]  zzc5
+2017-07-13 21:20:05  [ main:98 ] - [ DEBUG ]  len:0
+2017-07-13 21:33:58  [ main:0 ] - [ DEBUG ]  This is info message 3  4
+2017-07-13 21:34:49  [ main:0 ] - [ DEBUG ]  This is info message 3  4
+2017-07-13 21:34:49  [ main:68 ] - [ DEBUG ]  f.git
+2017-07-13 21:34:49  [ main:69 ] - [ DEBUG ]  f.idea
+2017-07-13 21:34:49  [ main:69 ] - [ DEBUG ]  fout
+2017-07-13 21:34:49  [ main:69 ] - [ DEBUG ]  fsrc
+2017-07-13 21:37:36  [ main:0 ] - [ DEBUG ]  This is info message 3  4
+2017-07-13 21:37:36  [ main:59 ] - [ DEBUG ]  f   .git
+2017-07-13 21:37:36  [ main:59 ] - [ DEBUG ]  f   .idea
+2017-07-13 21:37:36  [ main:59 ] - [ DEBUG ]  f   out
+2017-07-13 21:37:36  [ main:59 ] - [ DEBUG ]  f   src
+2017-07-13 21:40:35  [ main:0 ] - [ DEBUG ]  This is info message 3  4
+2017-07-13 21:40:35  [ main:54 ] - [ DEBUG ]  f   .git
+2017-07-13 21:40:35  [ main:54 ] - [ DEBUG ]  f   .idea
+2017-07-13 21:40:35  [ main:54 ] - [ DEBUG ]  f   out
+2017-07-13 21:40:35  [ main:54 ] - [ DEBUG ]  f   src
+2017-07-13 21:40:45  [ main:0 ] - [ DEBUG ]  This is info message 3  4
+2017-07-13 21:40:45  [ main:51 ] - [ DEBUG ]  -----zzc
+2017-07-13 21:40:45  [ main:52 ] - [ DEBUG ]  -----zzc4
+2017-07-13 21:40:45  [ main:52 ] - [ DEBUG ]  -----zzc5
+2017-07-13 21:40:45  [ main:52 ] - [ DEBUG ]  zzc
+2017-07-13 21:40:45  [ main:52 ] - [ DEBUG ]  zzc4
+2017-07-13 21:40:45  [ main:52 ] - [ DEBUG ]  zzc5
+2017-07-13 21:40:45  [ main:52 ] - [ DEBUG ]  len:3
+2017-07-13 21:40:45  [ main:52 ] - [ DEBUG ]  zzc
+2017-07-13 21:40:45  [ main:52 ] - [ DEBUG ]  zzc4
+2017-07-13 21:40:45  [ main:52 ] - [ DEBUG ]  zzc5
+2017-07-13 21:40:45  [ main:52 ] - [ DEBUG ]  len:0
+2017-07-13 21:56:36  [ main:0 ] - [ DEBUG ]  This is info message 3  4
+2017-07-13 21:56:36  [ main:61 ] - [ DEBUG ]  66555
+2017-07-13 21:57:02  [ main:0 ] - [ DEBUG ]  This is info message 3  4
+2017-07-13 21:57:02  [ main:43 ] - [ DEBUG ]  ---a66555
+2017-07-13 21:58:33  [ main:0 ] - [ DEBUG ]  This is info message 3  4
+2017-07-13 21:58:34  [ main:57 ] - [ DEBUG ]  ---a66555
+2017-07-13 21:59:20  [ main:0 ] - [ DEBUG ]  This is info message 3  4
+2017-07-13 21:59:20  [ main:67 ] - [ DEBUG ]  99999

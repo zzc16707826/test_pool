@@ -3,6 +3,7 @@ package com.company.test_collection;
 
 import com.company.Loger;
 
+import java.io.File;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -13,17 +14,35 @@ import java.util.Set;
 public class TCollection {
     static public void main(String[] Args) {
         TCollection tCollection = new TCollection();
-        tCollection.setColl();
+        tCollection.myLambda((int a) -> Loger.debug(""+a));
     }
 
-    public void setColl() {
+    private void filterFiles() {
+        File dir = new File(".");
+        File[] dirL = dir.listFiles((File f) -> {
+            boolean b = f.isDirectory();
+            if (b) Loger.debug("f   " + f.getName());
+            return b;
+        });
+    }
+//自己接收lambda
+    private void myLambda(Fun f) {
+        int a = 99999;
+        f.do1(a);
+    }
+
+    private void setColl() {
         Set<String> names = new HashSet<>();
         names.add("zzc");
         names.add("zzc");
         names.add("zzc4");
         names.add("zzc5");
 
-        names.stream().forEach(a->Loger.debug("-----"+a));
+        names.forEach((String a) -> {
+            Loger.debug("-----" + a);
+            a = "1";
+        });
+
         for (String name : names
                 ) {
             Loger.debug(name);
@@ -41,5 +60,9 @@ public class TCollection {
                 ) {
             Loger.debug(name);
         }
+    }
+
+    interface Fun {
+        void do1(int a);
     }
 }
