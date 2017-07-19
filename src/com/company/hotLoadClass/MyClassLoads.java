@@ -20,13 +20,13 @@ public class MyClassLoads extends ClassLoader {
 
 		
 	/**
-	 * @param classPaht
+	 * @param classPath
 	 * @return Object
 	 * 热加载新的Class类
 	 */
-	public Object FindNewClass(String classPaht) {
+	public Object FindNewClass(String classPath) {
 		try {
-			byte[] b = getBytes(classPaht);
+			byte[] b = getBytes(classPath);
 			return defineClass(null, b, 0, b.length).newInstance();
 		} catch (Exception e) {
 			e.printStackTrace();

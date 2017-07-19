@@ -14,7 +14,8 @@ import java.util.Set;
 public class TCollection {
     static public void main(String[] Args) {
         TCollection tCollection = new TCollection();
-        tCollection.myLambda((int a) -> Loger.debug(""+a));
+        tCollection.setColl();
+//        tCollection.myLambda((int a) -> Loger.debug("" + a));
     }
 
     private void filterFiles() {
@@ -25,44 +26,60 @@ public class TCollection {
             return b;
         });
     }
-//自己接收lambda
+
+    //自己接收lambda
     private void myLambda(Fun f) {
         int a = 99999;
         f.do1(a);
     }
 
     private void setColl() {
-        Set<String> names = new HashSet<>();
-        names.add("zzc");
-        names.add("zzc");
-        names.add("zzc4");
-        names.add("zzc5");
-
-        names.forEach((String a) -> {
-            Loger.debug("-----" + a);
-            a = "1";
+        Set<Tt> names = new HashSet<>(10);
+        names.add(new Tt1("ttt"));
+        names.add(new Tt1("ttt4"));
+        names.add(new Tt1("ttt3"));
+        names.add(new Tt1("999"));
+        names.forEach((a) -> {
+            System.out.println(a.a());
+//            Loger.debug("-----" + a.a());
         });
 
-        for (String name : names
-                ) {
-            Loger.debug(name);
-        }
-        Loger.debug("len:" + names.size());
-        for (Iterator<String> ite = names.iterator(); ite.hasNext(); ) {
+//        for (String name : names
+//                ) {
+//            Loger.debug(name);
+//        }
+//        Loger.debug("len:" + names.size());
+        for (Iterator<Tt> ite = names.iterator(); ite.hasNext(); ) {
 
-            Loger.debug(ite.next());
+            Loger.debug(ite.next().a());
             ite.remove();
 
         }
-        Loger.debug("len:" + names.size());
-//        names.clear();
-        for (String name : names
-                ) {
-            Loger.debug(name);
-        }
+//        Loger.debug("len:" + names.size());
+////        names.clear();
+//        for (String name : names
+//                ) {
+//            Loger.debug(name);
+//        }
     }
 
     interface Fun {
         void do1(int a);
+    }
+
+    interface Tt {
+        String a();
+    }
+
+    class Tt1 implements Tt {
+        public String a;
+
+        public Tt1(String a) {
+            this.a = a;
+        }
+
+        public String a() {
+            return a;
+        }
     }
 }
